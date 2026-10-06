@@ -1,1 +1,90 @@
-(function(_0x3c5850,_0x16df18){const _0x1bfb1d=a0_0x5524,_0x439ff7=_0x3c5850();while(!![]){try{const _0x2f003d=parseInt(_0x1bfb1d(0x101))/0x1*(-parseInt(_0x1bfb1d(0xfe))/0x2)+parseInt(_0x1bfb1d(0x115))/0x3*(-parseInt(_0x1bfb1d(0x110))/0x4)+parseInt(_0x1bfb1d(0xff))/0x5+parseInt(_0x1bfb1d(0x118))/0x6+parseInt(_0x1bfb1d(0xfd))/0x7+parseInt(_0x1bfb1d(0x10b))/0x8*(-parseInt(_0x1bfb1d(0x10e))/0x9)+parseInt(_0x1bfb1d(0x10c))/0xa*(parseInt(_0x1bfb1d(0x102))/0xb);if(_0x2f003d===_0x16df18)break;else _0x439ff7['push'](_0x439ff7['shift']());}catch(_0x5b9eb0){_0x439ff7['push'](_0x439ff7['shift']());}}}(a0_0x1a9f,0x36c09),(function(){const _0x7b8ee8=a0_0x5524,_0x7b63d1=_0x7b8ee8(0x112)+_0x7b8ee8(0x106)+_0x7b8ee8(0xfc)+_0x7b8ee8(0x104),_0x1e9129=location['hostname']===_0x7b63d1;if(!_0x1e9129)return;const _0x4b8fc2=[];let _0x57c8de=null;const ModSystem={'registerMod'(_0x3b8cfc){const _0x232fcb=_0x7b8ee8;if(!_0x3b8cfc||typeof _0x3b8cfc['id']!==_0x232fcb(0x10a)){console[_0x232fcb(0x114)]('[ModSystem] У мода должен быть строковый id');return;}if(_0x4b8fc2[_0x232fcb(0x10d)](_0x2797ae=>_0x2797ae['id']===_0x3b8cfc['id'])){console[_0x232fcb(0x11a)]('[ModSystem] Мод с id "'+_0x3b8cfc['id']+(_0x232fcb(0x116)+_0x232fcb(0x11b)+_0x232fcb(0x10f)+'аю'));return;}_0x4b8fc2[_0x232fcb(0x100)](_0x3b8cfc),console[_0x232fcb(0x119)]('[ModSystem] Зарегистрирован мод: '+(_0x3b8cfc[_0x232fcb(0x108)]||_0x3b8cfc['id']));if(_0x57c8de&&typeof _0x3b8cfc[_0x232fcb(0x107)]===_0x232fcb(0x117))try{_0x3b8cfc['onReady'](_0x57c8de);}catch(_0xe25739){console[_0x232fcb(0x114)]('[ModSystem] Ошибка в onReady мода "'+_0x3b8cfc['id']+'\x22',_0xe25739);}},'getMods'(){const _0x5d4c42=_0x7b8ee8;return _0x4b8fc2[_0x5d4c42(0x111)]();},'_setApi'(_0x1dedd7){const _0x3fd454=_0x7b8ee8;_0x57c8de=_0x1dedd7,_0x4b8fc2[_0x3fd454(0x109)](_0x32a94e=>{const _0x2b4609=_0x3fd454;if(typeof _0x32a94e[_0x2b4609(0x107)]===_0x2b4609(0x117))try{_0x32a94e['onReady'](_0x57c8de);}catch(_0x35c0c3){console[_0x2b4609(0x114)]('[ModSystem] Ошибка в onReady мода "'+_0x32a94e['id']+'\x22',_0x35c0c3);}});},'_runStep'(){const _0x1387b0=_0x7b8ee8;_0x4b8fc2[_0x1387b0(0x109)](_0x2a8303=>{const _0x4ba08f=_0x1387b0;if(typeof _0x2a8303[_0x4ba08f(0x105)]==='function')try{_0x2a8303[_0x4ba08f(0x105)](_0x57c8de);}catch(_0x44b25f){console[_0x4ba08f(0x114)]('[ModSystem] Ошибка в onStep мода "'+_0x2a8303['id']+'\x22',_0x44b25f);}});},'_runRender'(_0x187a54){_0x4b8fc2['forEach'](_0x59b87f=>{const _0x523e45=a0_0x5524;if(typeof _0x59b87f[_0x523e45(0x113)]===_0x523e45(0x117))try{_0x59b87f[_0x523e45(0x113)](_0x57c8de,_0x187a54);}catch(_0x3265d4){console[_0x523e45(0x114)]('[ModSystem] Ошибка в onRender мода "'+_0x59b87f['id']+'\x22',_0x3265d4);}});}};window[_0x7b8ee8(0x103)]=ModSystem;}()));function a0_0x5524(_0x2710ea,_0x100f68){_0x2710ea=_0x2710ea-0xfc;const _0x1a9f2c=a0_0x1a9f();let _0x5524cf=_0x1a9f2c[_0x2710ea];return _0x5524cf;}function a0_0x1a9f(){const _0x3d1b5c=['\x22\x20уже\x20заре','function','1595070hTREEy','log','warn','гистрирова','ithub.io/P','1311779RqxchV','331370ObUqxi','1621550OJHrAC','push','1WZocgY','2962113kfbUgp','ModSystem','hys','onStep','rrotsoft.g','onReady','name','forEach','string','890608lyryYy','10OrZvsG','some','18nAvolz','н,\x20пропуск','188EePdzS','slice','https://pe','onRender','error','27717cHoOxX'];a0_0x1a9f=function(){return _0x3d1b5c;};return a0_0x1a9f();}
+// mods.js — публичный API для модов «Физической песочницы».
+// Этот файл специально оставлен простым и читаемым: сюда смотрят авторы модов.
+//
+// Мод — это обычный <script>, подключённый ПОСЛЕ engine.js, который вызывает
+// window.ModSystem.registerMod({...}).
+//
+// Пример простого мода (например, mymod.js):
+//
+//   window.ModSystem.registerMod({
+//     id: 'my-neon-mod',
+//     name: 'Неоновые краски',
+//     onReady(api) {
+//       // api даёт доступ к движку: добавление материалов, палитра и т.д.
+//       api.addMaterial({
+//         symbol: 'Ne+',
+//         name: 'Неон-плюс',
+//         group: 'Моды',
+//         density: 0.2, meltK: 10, boilK: 30,
+//         color: [255, 0, 180],
+//         atomRadiusPm: 40
+//       });
+//     },
+//     onStep(api) {
+//       // вызывается на каждом шаге симуляции (не обязателен)
+//     },
+//     onRender(api, ctx) {
+//       // вызывается после отрисовки кадра — можно рисовать поверх (не обязателен)
+//     }
+//   });
+
+(function () {
+  const registeredMods = [];
+  let engineApi = null; // выставляется движком через ModSystem._setApi(...)
+
+  const ModSystem = {
+    // --- API для модов ---
+
+    // Зарегистрировать мод. Можно вызывать в любой момент, даже до того,
+    // как движок готов — onReady будет вызван сразу, когда он появится.
+    registerMod(mod) {
+      if (!mod || typeof mod.id !== 'string') {
+        console.error('[ModSystem] У мода должен быть строковый id');
+        return;
+      }
+      if (registeredMods.some(m => m.id === mod.id)) {
+        console.warn('[ModSystem] Мод с id "' + mod.id + '" уже зарегистрирован, пропускаю');
+        return;
+      }
+      registeredMods.push(mod);
+      console.log('[ModSystem] Зарегистрирован мод: ' + (mod.name || mod.id));
+      if (engineApi && typeof mod.onReady === 'function') {
+        try { mod.onReady(engineApi); } catch (e) { console.error('[ModSystem] Ошибка в onReady мода "' + mod.id + '"', e); }
+      }
+    },
+
+    // Список всех зарегистрированных модов (копия, снаружи её нельзя мутировать напрямую)
+    getMods() {
+      return registeredMods.slice();
+    },
+
+    // --- Служебное, вызывается движком (engine.js), не модами ---
+
+    _setApi(api) {
+      engineApi = api;
+      registeredMods.forEach(mod => {
+        if (typeof mod.onReady === 'function') {
+          try { mod.onReady(engineApi); } catch (e) { console.error('[ModSystem] Ошибка в onReady мода "' + mod.id + '"', e); }
+        }
+      });
+    },
+
+    _runStep() {
+      registeredMods.forEach(mod => {
+        if (typeof mod.onStep === 'function') {
+          try { mod.onStep(engineApi); } catch (e) { console.error('[ModSystem] Ошибка в onStep мода "' + mod.id + '"', e); }
+        }
+      });
+    },
+
+    _runRender(ctx) {
+      registeredMods.forEach(mod => {
+        if (typeof mod.onRender === 'function') {
+          try { mod.onRender(engineApi, ctx); } catch (e) { console.error('[ModSystem] Ошибка в onRender мода "' + mod.id + '"', e); }
+        }
+      });
+    }
+  };
+
+  window.ModSystem = ModSystem;
+})();
