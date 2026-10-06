@@ -1,9 +1,7 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Физическая песочница</title><script>// ПРОВЕРКА ДОМЕНА: страница работает ТОЛЬКО если запущена с разрешённого домена.
-// Впиши свой домен в ALLOWED_DOMAIN (без https:// и без пути), например 'mysite.com'.
-var ALLOWED_DOMAIN='https://perrotsoft.github.io/Phys';
-var DOMAIN_OK=(location.hostname===ALLOWED_DOMAIN); // булевая переменная: true только на нужном домене
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Физическая песочница</title><script>const ALLOWED_DOMAIN = 'https://perrotsoft.github.io/Phys';
+const ALLOWED_DOMAIN1 = 'https://perrotsoft.github.io/Phys/';
+const DOMAIN_OK = (location.hostname === ALLOWED_DOMAIN||location.hostname === ALLOWED_DOMAIN1); 
 if(!DOMAIN_OK){
-  // неправильный домен — заменяем страницу и дальше ничего не выполняется
   document.open();
   document.write('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><body style="font:18px system-ui;padding:24px;text-align:center"><h2>Извините, вы запустили неправильно код.</h2><p>Перейдите на правильный домен: <b>'+ALLOWED_DOMAIN+'</b></p></body>');
   document.close();
